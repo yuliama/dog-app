@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import DogModel from '../../model/DogModel';
+import SpecificBreedGalery from '../SpecificBreedGalery/SpecificBreedGalery'
 
 export default function BreedsGallery() {
     const [breeds, setBreeds] = useState([]);
-
 
     React.useEffect(getAllBreeds, [breeds]);
 
@@ -30,6 +30,7 @@ export default function BreedsGallery() {
         return res.data.message;
     }
     return (
-        <>{breeds.map(item => <div key={item.id}>{item.breedName}</div>)}</>  // <div>{breeds.map(breed => { <div>breed</div> })}</div>
+        // <>{breeds.map(item => <div key={item.id}>{item.breedName}</div>)}</>
+        <SpecificBreedGalery breed={'hound'}></SpecificBreedGalery>
     )
 }

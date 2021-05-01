@@ -1,0 +1,7 @@
+
+.specificBreedGallery > .breedCard img{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    margin-top:20px;
+}

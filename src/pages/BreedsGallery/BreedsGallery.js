@@ -1,36 +1,9 @@
-import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import DogModel from '../../model/DogModel';
+import { Link } from 'react-router-dom';
 import SpecificBreedGalery from '../SpecificBreedGalery/SpecificBreedGalery'
 
-export default function BreedsGallery() {
-    const [breeds, setBreeds] = useState([]);
-
-    React.useEffect(getAllBreeds, [breeds]);
-
-    async function getAllBreeds() {
-        const getAllBreedsURL = "https://dog.ceo/api/breeds/list/all";
-
-        const res = await axios.get(getAllBreedsURL);
-
-        const breedsNames = Object.keys(res.data.message);
-
-        const promise = breedsNames.map(async (item, count) => {
-            let url = await getBreedRandomImage(item);
-            return new DogModel(count, item, url);
-        });
-        setBreeds(await Promise.all(promise));
-    }
-
-    async function getBreedRandomImage(breedName) {
-        const imageUrl = '';
-        const getAllBreedRandomImageUrl = "https://dog.ceo/api/breed/" + breedName + "/images/random";
-
-        const res = await axios.get(getAllBreedRandomImageUrl);
-        return res.data.message;
-    }
+export default function BreedsGallery({ breeds }) {
     return (
-        // <>{breeds.map(item => <div key={item.id}>{item.breedName}</div>)}</>
-        <SpecificBreedGalery breed={'hound'}></SpecificBreedGalery>
+        <>{breeds.map(item => <Link to={"SpecificBreedGalery/" + item.breedName} key={item.id}>{item.breedName}</Link>)}</>
     )
 }

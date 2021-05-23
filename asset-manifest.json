@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dog-app/static/css/main.b9e46c86.chunk.css",
+    "main.js": "/dog-app/static/js/main.27366dbe.chunk.js",
+    "main.js.map": "/dog-app/static/js/main.27366dbe.chunk.js.map",
+    "runtime-main.js": "/dog-app/static/js/runtime-main.b7a552aa.js",
+    "runtime-main.js.map": "/dog-app/static/js/runtime-main.b7a552aa.js.map",
+    "static/js/2.27ba21ca.chunk.js": "/dog-app/static/js/2.27ba21ca.chunk.js",
+    "static/js/2.27ba21ca.chunk.js.map": "/dog-app/static/js/2.27ba21ca.chunk.js.map",
+    "static/js/3.e3d3dd82.chunk.js": "/dog-app/static/js/3.e3d3dd82.chunk.js",
+    "static/js/3.e3d3dd82.chunk.js.map": "/dog-app/static/js/3.e3d3dd82.chunk.js.map",
+    "index.html": "/dog-app/index.html",
+    "static/css/main.b9e46c86.chunk.css.map": "/dog-app/static/css/main.b9e46c86.chunk.css.map",
+    "static/js/2.27ba21ca.chunk.js.LICENSE.txt": "/dog-app/static/js/2.27ba21ca.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7a552aa.js",
+    "static/js/2.27ba21ca.chunk.js",
+    "static/css/main.b9e46c86.chunk.css",
+    "static/js/main.27366dbe.chunk.js"
+  ]
+}
